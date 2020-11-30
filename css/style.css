@@ -12,7 +12,7 @@ body {
   background-color: #F0ECE8;
   font-family: "ヒラギノ丸ゴ ProN", "serif";
 }
-p, h1, h2, h3, h4, th, td {
+p, h1, h2, h3, h4, th, td, {
   color: #454545;
 }
 h2 {
@@ -191,13 +191,50 @@ header {
  * introduction *
  ****************/
 
-/*******************
- * mouth_breathing *
- ******************/
+/***************
+ * explanation *
+ ***************/
 
 /***********
  * feature *
  ***********/
+.feature_wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.feature_item {
+  width: 15%;
+  height: 20vw;
+  padding: 2%;
+}
+.feature_img {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+.feature_img i {
+  color: #999999;
+}
+.feature_text {
+  margin-top: 20%;
+}
+.feature_text p {
+  margin-top: 5%;
+}
+.even_item {
+  background-color: #E4F1EF;
+}
+.odd_item {
+  background-color: #DFD6D5;
+}
+
 
 /********
  * flow *
