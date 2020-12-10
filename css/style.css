@@ -167,29 +167,41 @@ header {
   margin: 0 5%;
 }
 
-/************
- * foreword *
- ************/
-.foreword_wrap {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.foreword_wrap_item {
-  width: 25%;
-  margin: 1%;
-  padding: 2%;
-  border-radius: 30px;
-  background-color: #FFFBBD;
-}
-.foreword_wrap_item h3 {
-  margin-bottom: 3%;
-}
-
 /****************
  * introduction *
  ****************/
+.introduction_wrap {
+  display: flex;
+  justify-content: center;
+}
+.introduction_img {
+  width: 70%;
+  text-align: center;
+}
+.introduction_img img {
+  width: 80%;
+  margin-top: 5%;
+}
+.introduction_list {
+  width: 30%;
+  height: 23vw;
+  margin-left: -20vw;
+  padding: 2%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.introduction_list li {
+  display: flex;
+  margin-top: 3%;
+  font-size: 1.4vw;
+  align-items: center;
+  list-style: none;
+}
+.introduction_list i {
+  margin-right: 3%;
+  color: #2FA179;
+}
+
 
 /***************
  * explanation *
@@ -295,6 +307,9 @@ header {
 .question_item {
   width: 70%;
   margin: 2% auto;
+  padding: 2%;
+  background-color: #fffdd1;
+  border-radius: 10px;
 }
 .question_item_q {
   margin-bottom: 1%;
