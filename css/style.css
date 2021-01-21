@@ -402,9 +402,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.overview_table {
-  width: 40%;
+  flex-flow: row-reverse;
 }
 .overview_table {
   width: 40%;
@@ -751,85 +749,84 @@ footer p {
    ***********/
   .message_wrap {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-content: unset;
   }
   .message_left {
-    width: 50%;
-    padding-right: 5%;
+    width: 90%;
+    padding-right: 0;
+    margin: 0 auto;
   }
   .message_left p {
     margin-bottom: 3%;
-  
+
   }
   .message_left p:last-of-type {
-    text-align: right;
-    font-size: 1.3vw;
-  
+    font-size: 3.5;
   }
   .message_right {
-    width: 25%;
-    margin-right: -5%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
   }
   .message_right_img {
-    width: 70%;
-    margin-bottom: 5%;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .message_right_text {
+    width: 45%;
+    margin-left: 5%;
   }
   .message_right_text p {
-    font-size: 0.9vw;
+    margin-bottom: 2%;
+    font-size: 3vw;
   }
-  
-  
+
+
   /************
    * overview *
    ************/
-  .overview {
-    margin-bottom: 0;
-  }
   .overview_wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    justify-content: unset;
+    align-items: unset;
+    flex-flow: unset;
   }
   .overview_table {
-    width: 40%;
-  }
-  .overview_table {
-    width: 40%;
+    width: 100%;
+    margin-top: 4%;
   }
   .overview_table table {
-    width: 90%;
-    border: 1px solid #999999;
+    width: 100%;
   }
   .overview_table th, .overview_table td {
-    padding: 1%;
-    border: 1px solid #999999;
+    padding: 2%;
   }
   .overview_img {
-    width: 40%;
-    height: 40vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: unset;
+    display: unset;
+    align-items: unset;
   }
   .overview_map {
-    width: 80%;
+    width: 100%;
     height: 40vh;
-    margin: 2% auto;
+    margin: 2% auto 20% auto;
   }
-  
-  
+
+
   /****************************************
    * footer
    ****************************************/
   footer {
-    background-color: #A3BCE2;
     padding: 1% 0;
-    text-align: center;
   }
   footer p {
-    font-size: 0.7vw;
-    color: #ffffff;
+    font-size: 2.5vw;
   }
 
 }
