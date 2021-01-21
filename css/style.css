@@ -762,7 +762,7 @@ footer p {
 
   }
   .message_left p:last-of-type {
-    font-size: 3.5;
+    font-size: 3.5vw;
   }
   .message_right {
     width: 90%;
