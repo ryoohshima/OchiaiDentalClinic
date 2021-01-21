@@ -290,6 +290,7 @@ header {
   padding: 2%;
   background-color: #ffffff;
   display: flex;
+  flex-flow: row-reverse;
   justify-content: center;
   align-items: center;
 }
@@ -507,19 +508,24 @@ footer p {
     width: 50%;
   }
   .header_menu a p {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
   .header_menu_phone {
     padding: 2.7% 2%;
   }
   .header_menu_web {
     margin-left: 0;
-    padding: 1% 2%;
+    padding: 3% 2%;
   }
   .header_menu_web p:last-of-type {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
-
+  .header_menu_phone:hover,
+  .header_menu_web:hover {
+    transition: unset;
+    border-radius: unset;
+    background-color: unset;
+  }
 
   /****************************************
    * main
@@ -657,74 +663,62 @@ footer p {
    * flow *
    ********/
   .flow_item {
-    width: 70%;
-    margin: 0 auto 5% auto;
-    position: relative;
-    margin-top: -2%;
+    width: 90%;
+    margin-bottom: 10%;
   }
   .flow_item_dot::before {
-    content: "";
-    border-left: 5px dotted #A3BCE2;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -90px;
-    width: 5px;
-    height: 90px;
-    margin: auto;
+    border-left: 3px dotted #A3BCE2;
   }
   .flow_item_number {
-    display: inline-block;
-    padding: 1% 2% 0.5% 2%;
-    border-radius: 100px 100px 0 0;
-    background-color: #A3BCE2;
+    padding: 3% 4% 0.5% 4%;
   }
   .flow_item_number p {
-    color: #ffffff;
-    font-size: 1.4vw;
+    font-size: 3vw;
   }
   .flow_item_wrap {
-    width: 96%;
-    padding: 2%;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    padding: 4%;
+    display: block;
+    flex-flow: unset;
+    align-items: unset;
   }
   .flow_item_inner {
-    width: 60%;
-    margin-right: 5%;
+    width: 100%;
+    margin-right: 0;
   }
   .flow_item_inner h3 {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
   }
   .flow_item_img {
-    width: 30%;
+    width: 100%;
+    margin-bottom: 3%;
   }
   .flow_item_img img {
     border-radius: 20px;
   }
-  
-  
+
+
   /********
    * cost *
    ********/
   .cost_items {
-    width: 50%;
-    margin: 2% auto;
-    padding: 4% 5%;
-    background-color: #ffffff;
-    border-radius: 200px;
+    width: 70%;
+    margin: 4% auto;
+    padding: 4% 10%;
     border: 10px double #D7E7AF;
   }
   .cost_items h3 {
     margin-bottom: 4%;
   }
   .cost_items span {
-    font-size: 1.5vw;
+    font-size: 4.5vw;
   }
-  
-  
+  .cost_items .br::before {
+  content: "\A";
+  white-space: pre;
+  }
+
+
   /************
    * question *
    ************/
@@ -732,29 +726,26 @@ footer p {
     width: 100%;
   }
   .question_item {
-    width: 70%;
-    margin: 2% auto;
-    padding: 2%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 4px dashed #D7E7AF;
+    width: 85%;
+    margin: 4% auto;
+    padding: 5%;
+    border: 3px dashed #D7E7AF;
   }
   .question_item_q {
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
   .question_item_q span {
-    margin-right: 1%;
+    margin-right: 2%;
   }
   .question_item_a {
     display: flex;
   }
   .question_item_a p:first-of-type {
-    margin-right: 1%;
-    color: #265fa9;
-    font-size: 1.4vw;
+    margin-right: 2%;
+    font-size: 4vw;
   }
-  
-  
+
+
   /***********
    * message *
    ***********/
