@@ -1,14 +1,16 @@
 $(function(){
     // fixed botton fadein
-    const fixedButton = $('#fixed_menu');
-    fixedButton.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            fixedButton.fadeIn();
-        } else {
-            fixedButton.fadeOut();
-        }
-    });
+    if (isSmartPhone() === true) {
+        const fixedButton = $('#fixed_menu');
+        fixedButton.hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                fixedButton.fadeIn();
+            } else {
+                fixedButton.fadeOut();
+            }
+        });
+    }
 
     // adjust spn footer menu
     $(window).on('load scroll resize', function(){
@@ -23,3 +25,11 @@ $(function(){
 
     });
 });
+
+function isSmartPhone() {
+  if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) {
+    return true;
+  } else {
+    return false;
+  }
+}
