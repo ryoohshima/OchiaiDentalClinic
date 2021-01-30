@@ -254,6 +254,30 @@ header {
   background-color: #d2ead5;
 }
 
+/**************
+ * how to use *
+ **************/
+.how-to-use_wrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.how-to-use_items {
+  width: 45%;
+}
+.how-to-use_title {
+  text-align: center;
+}
+.how-to-use_img {
+  width: 50%;
+  margin: 0 auto;
+}
+.how-to-use_text {
+  width: 70%;
+  margin: 0 auto;
+}
+
 
 /********
  * flow *
@@ -654,6 +678,27 @@ footer p {
   .feature_text p {
     width: 70%;
     margin: 5% auto 0 auto;
+  }
+
+
+  /**************
+   * how to use *
+   **************/
+  .how-to-use_wrap {
+    width: 90%;
+    display: block;
+    justify-content: unset;
+  }
+  .how-to-use_items {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  .how-to-use_img {
+    width: 70%;
+  }
+  .how-to-use_text {
+    width: 70%;
+    margin: 0 auto;
   }
 
 
